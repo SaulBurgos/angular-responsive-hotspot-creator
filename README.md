@@ -1,4 +1,4 @@
-Angular responsive hotspot creator
+Angularjs responsive hotspot creator
 ----------------------------------
 
 This directive create hotspots over an image, then you can use the array of hotspots to recreate them with responsive behavior. This was a project that I worked together with a friend in our job. Thanks [Lawrence Velasquez][1]
