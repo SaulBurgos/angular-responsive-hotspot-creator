@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+.guideLine {
+  border: 1px dashed red;
+}
+
+#finalResult {
+  display: inline-block;
+  position: relative;
+  max-width: 600px;
+  overflow: auto; /*fix the float element*/
+}
+
+#finalResult img {
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+
+.hotspotAreas-item {
+  position: absolute;
+  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.51);
+  border-radius: 10px;
+}
+
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to { visibility: hidden; }
+}
+@-webkit-keyframes blink {
+  to { visibility: hidden; }
+}
+
+/****************hotspot creator************/
+
+
+#hotspotCreator {
+  /*height: 350px;*/
+}
+
+#hotspotCreator .hotspot-index {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.8em;
+}
+#hotspotCreator .hotspotCreator-arrange {
+  height: 350px;
+  position: relative;
+  /*height: 100%;*/
+  width: 100%;
+  overflow: hidden;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#hotspotCreator .hotspotCreator-image {
+  height: 100%;
+  max-width: 100%;
+}
+#hotspotCreator .hotspotCreator-hotspot {
+  position: absolute;
+  border: solid 1px #990000;
+  background: #cc0000;
+  border-radius: 6px;
+  min-width: 40px;
+  min-height: 40px;
+  opacity: 0.7;
+}
+#hotspotCreator .hotspotCreator-hotspot:hover {
+  cursor: move;
+}
+#hotspotCreator .ui-icon-gripsmall-diagonal-se {
+  width: 20px;
+  height: 20px;
+  background-image: none;
+  background-size: contain;
+  background-position: 100%;
+  background-image: url('../img/resize.png');
+}

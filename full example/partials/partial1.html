@@ -1,0 +1,25 @@
+<div style="display:inline-block;width:48%;vertical-align: top;">
+	<label>
+		Image Url
+	</label>
+	<input type="text" placeholder="url image" ng-model="data.image" style="width:400px;"/>
+</div>
+
+<div style="display:inline-block;width:48%;vertical-align: top;">
+	<textarea style="width:100%;height:120px;">{{getJsonString()}}</textarea>
+</div>
+<div style="max-width:600px;margin:0 auto;">
+click on image
+<hotspot-creator image-src="data.image" hotspots="data.hotspots" options="data.options"></hotspot-creator>
+</div>
+
+<hr>
+<h3>Using ng-repeat to recreate hotspots</h3>
+
+<div id="finalResult">
+	<img ng-src="{{data.image}}" />
+
+	<div class="hotspotAreas-item blink" ng-style="item.position" ng-repeat="item in data.hotspots" 
+	ng-click="eventClick($index);">
+	</div>
+</div>

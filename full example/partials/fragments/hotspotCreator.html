@@ -1,0 +1,18 @@
+﻿<div>
+	<div id="hotspotCreator" >
+		<div class="hotspotCreator-container">
+
+			<div class="hotspotCreator-arrange">
+				<img class="hotspotCreator-image" ng-src="{{imageSrc}}" alt="Image" />
+				<div ng-repeat="hotspot in hotspots" class="hotspotCreator-hotspot ui-widget-content" ng-style="hotspot.position" ng-init="setUpHotspot();">
+					<span class="hotspot-index">{{ $index + 1 }}</span>
+				</div>
+			</div>				
+			<div class="hotspotCreator-panel ">				
+				<div ng-show="options.showRandomButton">
+					<button class="btn btn-default heritageButton" ng-click="reorganizeHotspotRandom();">Reorganize</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
