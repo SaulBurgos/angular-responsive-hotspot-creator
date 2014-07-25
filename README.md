@@ -1,0 +1,2 @@
+angular-responsive-hotspot-creator
+==================================
