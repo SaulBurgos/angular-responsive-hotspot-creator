@@ -10,6 +10,17 @@ Dependencies
  - jQuery
  - underscore.js
  - jqueryUI
+
+ Intrusctions: 
+
+ - image-src : url image
+ - hotspots : array where hotspots will be placed
+ - options : options (stil in progress)
+
+
+html directive
+
+ <hotspot-creator image-src="" hotspots="" options=""></hotspot-creator>
  
 
 
