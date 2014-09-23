@@ -11,7 +11,7 @@ Dependencies
  - underscore.js
  - jqueryUI
 
-Intrusctions: 
+Instructions: 
 
  - image-src : url image
  - hotspots : array where hotspots will be placed
