@@ -46,9 +46,7 @@ angular.module('hotspotModule', [])
 					var parent =  angular.element('#hotspotCreator .hotspotCreator-arrange');
 				 	
 				 	scope.$watch('imageSrc', function(newValue, oldValue) {
-
 				 		parent.removeAttr('style');
-
 	             	jQuery('.hotspotCreator-image').load(function() {
 							parent.css('height',jQuery(this).css('height'));
 							parent.css('width',jQuery(this).css('width'));
@@ -65,7 +63,7 @@ angular.module('hotspotModule', [])
 					 	var coor = {X: 0,Y: 0};
 					 	var gap = 10;//to locate the hotspot in center of cursor
 				    	if (event.offsetX == undefined) {
-					      coor = {X: event.pageX - $(this).offset().left - gap, Y: event.pageY - $(this).offset().top - gap};
+					      coor = {X: event.pageX - jQuery(this).offset().left - gap, Y: event.pageY - jQuery(this).offset().top - gap};
 				    	} else {
 					      coor = {X: event.offsetX - gap, Y: event.offsetY - gap};
 				    	}
